@@ -1,43 +1,141 @@
 
 /*
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
+Primary Color (Main Olive Green): #7db066;
+Secondary Color (Light Olive Green): #d7f0cc;
 */
 
-<head>
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-
   body {
-    background-color: #ffffff;
+    background-color: #d7f0cc;
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
   }
+  header {
+    background-color: #d7f0cc
+  }
 
   h1, h2, h3, h4 {
     line-height: 1.4;
   }
   h1 {
-    font-size: 2.75em;
+    font-size: 2.00em;
     font-weight: 700;
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 1.75em;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 1.75em;
+    font-size: 1.25em;
     font-weight: 400;
   }
   h4 {
-    font-size: 1.35em;
+    font-size: 1.00em;
     font-weight: 400;
+  }
+  img {
+    width:100%;
+  }
+
+  a:link {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+  }
+  a:visited { /* visited link */
+  color: #346beb;
+  }
+  a:hover,
+  a:focus {
+    color: #7db066;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  a:active { /* selected link */
+  color: #994c30;
+  }
+
+  .social-links a:link {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+  }
+  .social-links a:visited { /* visited link */
+  color: #346beb;
+  }
+  .social-links a:hover,
+    a:focus {
+    color: #7db066;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  .social-links a:active { /* selected link */
+  color: #994c30;
+  }
+
+  .button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #ff7f50;
+    color: #ffffff !important; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  }
+  .button:active {
+    opacity:0.4; /*Reduces the opactiy of the button to 40% when active. Makes action visible for mobile users where hover is not visible */
+    text-decoration: none;
+  }
+  .button.contact {
+    background-color: transparent;
+    color: #ff7f50 !important;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }
+  .button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  }
+  .button.contact:active {
+    background-color: #ff7f50;
+    color: #ffffff !important;
+  }
+  .profile-pic {
+    max-width:25%;
+    height:auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .logo {
+    max-width:8%;
+    height:auto;
+  }
+  .vela-cover-img {
+    max-width: 80%;
+    height: auto;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .wordier-cover-img {
+    max-width: 80%;
+    height: auto;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 5px;
   }
