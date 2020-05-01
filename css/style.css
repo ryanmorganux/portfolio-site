@@ -5,8 +5,11 @@ Primary Color (Main Olive Green): #7db066;
 Secondary Color (Light Olive Green): #d7f0cc;
 */
 
+* {
+  box-sizing: border-box;
+}
   body {
-    background-color: #d7f0cc;
+    background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -14,7 +17,9 @@ Secondary Color (Light Olive Green): #d7f0cc;
     color: #4a4a4a;
   }
   header {
-    background-color: #d7f0cc
+    background-color: #d7f0cc;
+    text-align: center;
+    padding: 10px 0;
   }
 
   h1, h2, h3, h4 {
@@ -116,7 +121,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     width: 50%;
   }
   .logo {
-    max-width:8%;
+    max-width:250px;
     height:auto;
   }
   .vela-cover-img {
@@ -138,4 +143,48 @@ Secondary Color (Light Olive Green): #d7f0cc;
     margin-right: auto;
     padding-top: 100px;
     padding-bottom: 5px;
+  }
+  .button.prototype {
+    background-color: transparent;
+    color: #ff7f50 !important;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }
+  .button.prototype:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  }
+  .button.prototype:active {
+    background-color: #ff7f50;
+    color: #ffffff !important;
+  }
+  .linkedin {
+    width:10%;
+    height:10%;
+  }
+  .twitter {
+    width: 10%;
+    height: 10%;
+  }
+
+  /* Layout Styling Below */
+
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  #my-work .row {
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  }
+  #hero h1 {
+    text-align: center; /* Centers Text */
+  }
+  #hero p {
+    text-align: center; /* Centers Text */
+  }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
   }
