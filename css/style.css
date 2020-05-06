@@ -20,8 +20,13 @@ Secondary Color (Light Olive Green): #d7f0cc;
     background-color: #d7f0cc;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
+    width: 100%;
   }
-
+  main {
+    padding-top: 210px;
+  }
   h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -102,6 +107,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     color: #ff7f50 !important;
     text-transform: uppercase;
     border: 2px solid #ff7f50;
+    margin-bottom: 20px;
   }
   .button.contact:hover {
   background-color: #ff7f50;
@@ -120,8 +126,8 @@ Secondary Color (Light Olive Green): #d7f0cc;
     margin-right: auto;
     width: 50%;
   }
-  .logo {
-    max-width:250px;
+  .logo { /* changes the size of the logo*/
+    max-width:150px;
     height:auto;
   }
   .vela-cover-img {
@@ -146,16 +152,19 @@ Secondary Color (Light Olive Green): #d7f0cc;
   }
   .button.prototype {
     background-color: transparent;
+    text-align: center; /* I am not sure why this button is not centering. */
     color: #ff7f50 !important;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
+    border: 3px solid #ff7f50;
   }
   .button.prototype:hover {
   background-color: #ff7f50;
+  text-align: center;
   color: #ffffff !important;
   }
   .button.prototype:active {
     background-color: #ff7f50;
+    text-align: center;
     color: #ffffff !important;
   }
   .linkedin {
@@ -166,7 +175,6 @@ Secondary Color (Light Olive Green): #d7f0cc;
     width: 10%;
     height: 10%;
   }
-
   /* Layout Styling Below */
 
   .container {
@@ -178,13 +186,77 @@ Secondary Color (Light Olive Green): #d7f0cc;
   #my-work .row {
     padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
   }
+  #hero {
+    background-color: #f2f2f2;
+    display: inline-block;
+    width: 100%;
+    text-align: center; /* I am not sure why the text doesnt appear to be accurately centered on the screen. */
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
   #hero h1 {
-    text-align: center; /* Centers Text */
+      padding: 0 25px;
+      width: 100%;
   }
-  #hero p {
-    text-align: center; /* Centers Text */
-  }
+#hero span {
+  font-size: 16pt;
+  font-style: bold;
+  padding: 0 25px;
+}
   nav > ul {
     list-style-type: none;
     padding: 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul > li > a {
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #4a4a4a; /* ISSUE - FOR SOME REASON, THE BLUE COLOR FROM THE VISITED LINK CLASS IS OVERRIDING THIS */
+  }
+  nav > ul > li > a:visited {
+    color: #949494;
+  }
+  nav > ul > li > a:hover {
+    color: #d6d6d6;
+    text-decoration: none;
+  }
+  nav > ul > li > a:active {
+    color: #ffffff;
+  }
+  #my-work {
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+  }
+  #about {
+    text-align: center;
+  }
+  #skills-tools-list > div > ul {
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  #resume-button {
+    background-color: transparent;
+    color: #ff7f50 !important;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }
+  #resume-button:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  }
+  #resume-button:active {
+    background-color: #ff7f50;
+    color: #ffffff !important;
+  }
+  #vela-title {
+    text-align: center;
+  }
+  #prototype-title {
+    text-align: center;
   }
