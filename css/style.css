@@ -19,7 +19,8 @@ Secondary Color (Light Olive Green): #d7f0cc;
   header {
     background-color: #d7f0cc;
     text-align: center;
-    padding: 10px 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
     position: fixed;
     box-shadow: 0px 2px 15px 0px rgba(40, 40, 40, 0.6);
     width: 100%;
@@ -56,32 +57,18 @@ Secondary Color (Light Olive Green): #d7f0cc;
   a:link {
   color: #ff7f50;
   text-decoration: none; /* No underlining */
+  transition-duration: 0.2s;
+  transition-property: opacity;
   }
   a:visited { /* visited link */
   color: #346beb;
   }
-  a:hover,
-  a:focus {
-    color: #7db066;
-    text-decoration: underline; /* Underlining when hovering over a link */
+  a:hover {
+    color: #439140;
+    opacity: 0.8;
+    font-weight: bold;
   }
   a:active { /* selected link */
-  color: #994c30;
-  }
-
-  .social-links a:link {
-  color: #ff7f50;
-  text-decoration: none; /* No underlining */
-  }
-  .social-links a:visited { /* visited link */
-  color: #346beb;
-  }
-  .social-links a:hover,
-    a:focus {
-    color: #7db066;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  .social-links a:active { /* selected link */
   color: #994c30;
   }
 
@@ -109,6 +96,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     text-transform: uppercase;
     border: 2px solid #ff7f50;
     margin-bottom: 20px;
+    transition: 0.2s;
   }
   .button.contact:hover {
   background-color: #ff7f50;
@@ -117,6 +105,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
   .button.contact:active {
     background-color: #ff7f50;
     color: #ffffff !important;
+    border: 5px solid #439140;
   }
   .profile-pic {
     max-width:20%;
@@ -182,6 +171,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     width: 8%;
     height: 8%;
   }
+
   /* Layout Styling Below */
 
   .container {
@@ -192,7 +182,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
   }
   .row::after {
     content: "";
-    clear:both;
+    clear: both;
     display: table;
   }
   #my-work .row {
@@ -226,14 +216,14 @@ Secondary Color (Light Olive Green): #d7f0cc;
   nav > ul > li > a {
     padding: 0 10px;
     text-transform: uppercase;
-    font-weight: 900;
-    color: #4a4a4a; /* ISSUE - FOR SOME REASON, THE BLUE COLOR FROM THE VISITED LINK CLASS IS OVERRIDING THIS */
+    font-weight: 700;
+    color: #5e5e5e; /* ISSUE - FOR SOME REASON, THE BLUE COLOR FROM THE VISITED LINK CLASS IS OVERRIDING THIS */
   }
   nav > ul > li > a:visited {
-    color: #949494;
+    color: #8c8c8c;
   }
   nav > ul > li > a:hover {
-    color: #d6d6d6;
+    color: #ff7f50;
     text-decoration: none;
   }
   nav > ul > li > a:active {
@@ -248,10 +238,15 @@ Secondary Color (Light Olive Green): #d7f0cc;
   #about {
     text-align: center;
   }
-  #skills-tools-list > div > ul {
+  #skills-tools-list > h2 > div > div > h3 > ul {
     list-style-type: none;
-    padding: 0;
-    padding-bottom: 50px;
+    padding: 0px;
+  }
+  .relevant-skills {
+    list-style-type: none;
+  }
+  .tools-i-use {
+    list-style-type: none;
   }
   #resume-button {
     background-color: transparent;
@@ -278,11 +273,55 @@ Secondary Color (Light Olive Green): #d7f0cc;
   }
   #my-story {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 10px 5px 10px;
+  }
+  .container-resume-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .berlin-illustration {
+    width:100%;
+    max-width:100%;
+    height: auto;
+  }
+  #animation-test {
+    text-align: center;
+  }
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+  @keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
 [class*="col-"] {
   float:left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
   /* ==============================
 Medium devices (640px and larger)
@@ -290,15 +329,15 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
   text-align: unset;
-  padding: 20px 0 13px;
+  padding: 10px 0 10px;
 }
 main {
-  padding-top: 160px;
+  padding-top: 135px;
 }
 nav {
    width: auto;
    float: right;
-   margin-top: 4px;
+   margin-top: 30px;
  }
  body {
    font-size:18px;
@@ -306,13 +345,35 @@ nav {
  .col-md-6 {
   width: 50%;
 }
+  #about-page h3 { margin-top: 0;
+  }
 }
+
 
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+.col-lg-5 {
+  width: 41.66%;
+  float:left;
+}
+.col-lg-7 {
+  width: 58.33%;
+  float:left;
+}
+.col-lg-6 {
+  width: 50%;
+  float: left;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
