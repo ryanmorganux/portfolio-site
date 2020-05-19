@@ -108,7 +108,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     border: 5px solid #439140;
   }
   .profile-pic {
-    max-width:20%;
+    max-width:60%;
     height:auto;
     border-radius: 10px;
     display: block;
@@ -171,6 +171,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     width: 8%;
     height: 8%;
   }
+
 
   /* Layout Styling Below */
 
@@ -244,9 +245,12 @@ Secondary Color (Light Olive Green): #d7f0cc;
   }
   .relevant-skills {
     list-style-type: none;
+    padding-left: 0;
   }
   .tools-i-use {
     list-style-type: none;
+    text-align: center;
+    padding-left: 0;
   }
   #resume-button {
     background-color: transparent;
@@ -285,7 +289,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     height: auto;
   }
   #animation-test {
-    text-align: center;
+    width: 100%;
   }
   @keyframes color-change {
     0% {fill: #edc655;}
@@ -323,6 +327,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
   padding-left: 10px;
   padding-right: 10px;
 }
+
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -356,17 +361,17 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+.col-lg-3 {
+  width:25%;
+}
 .col-lg-5 {
   width: 41.66%;
-  float:left;
 }
 .col-lg-7 {
   width: 58.33%;
-  float:left;
 }
 .col-lg-6 {
   width: 50%;
-  float: left;
 }
 .container {
   max-width: 1200px;
