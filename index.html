@@ -10,6 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<script>
+  alert("Hello");
+</script>
+
 <body>
   <header>
     <div id="header" class="container">
@@ -39,7 +43,7 @@
       <div class="container">
         <h1> My Work </h1>
         <div class="row">
-          <div class="column col-md-6 col-lg-7">
+          <div class="col-sm-12 col-md-6 col-lg-7">
             <div class="vela-index-img">
               <picture>
                 <source srcset="img/updated-vela-screens/mainlocationscreen-1x.png" media="(max-width:767px)">
@@ -47,7 +51,7 @@
               </picture>
             </div>
           </div>
-          <div class="column col-md-6 col-lg-5">
+          <div class="col-sm-12 col-md-6 col-lg-5">
             <h2> Vela App-Case Study </h2>
             <p> The ​Vela ​app is a weather app focused on providing recreational marine weather information to users in a straightforward manner. The Design Process for this app consisted of the following stages: Design, Empathize, Ideate, Test,
               Prototype, and Refine. The result is an app capable of providing instant value and a positive user experience.
@@ -57,22 +61,24 @@
         </div>
 
         <div class="row">
-          <div class="column col-md-6 col-lg-7">
+          <div class="col-sm-12 col-md-6 col-lg-7">
             <picture>
               <source srcset="img/Wordier/lowfidelity6-1x.jpg" media="(max-width:767px)">
               <img src="img/Wordier/lowfidelity6-2x.jpg" alt="Wordier Cover Image" class="wordier-cover-img"> </picture>
           </div>
-          <div class="column col-md-6 col-lg-5">
-            <h2> Wordier App-Case Study </h2>
-            <p> The ​Wordy ​app focuses on helping people learn new vocabulary words. Ideation for features of this app proved challenges giving the variety of vocabulary apps on the market. The user testing and user interviews were highly valued
-              stages of the design process for this app.
-            </p>
-            <a href="wordier.html" class="button"> View Project </a>
+          <div class="col-sm-12 col-md-6 col-lg-5">
+            <div class="wordier-cover-text">
+              <h2> Wordier App-Case Study </h2>
+              <p> The ​Wordy ​app focuses on helping people learn new vocabulary words. Ideation for features of this app proved challenges giving the variety of vocabulary apps on the market. The user testing and user interviews were highly valued
+                stages of the design process for this app.
+              </p>
+              <a href="wordier.html" class="button"> View Project </a>
+            </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="column col-md-6 col-lg-7">
+          <div class="col-sm-12 col-md-6 col-lg-7">
             <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="505" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917" />
@@ -1012,9 +1018,11 @@
               </g>
             </svg>
           </div>
-          <div class="column col-md-6 col-lg-5" id="animation-test">
-            <h2> CSS Animation </h2>
-            <a href="" class="button"> View Project </a>
+          <div class="col-sm-12 col-md-6 col-lg-5">
+            <div class="animation-test">
+              <h2> CSS Animation </h2>
+              <a href="" class="button"> View Project </a>
+            </div>
           </div>
         </div>
 
@@ -1057,6 +1065,9 @@
     </div>
 
   </footer>
+
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

@@ -108,7 +108,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     border: 5px solid #439140;
   }
   .profile-pic {
-    max-width:60%;
+    max-width:30%;
     height:auto;
     border-radius: 10px;
     display: block;
@@ -120,24 +120,14 @@ Secondary Color (Light Olive Green): #d7f0cc;
     max-width:125px;
     height:auto;
   }
-  .vela-cover-img {
-    max-width: 80%;
-    height: auto;
-    height:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  .vela-index-img img {
+    height:400px;
+    width:auto;
   }
   .wordier-cover-img {
     max-width: 80%;
-    height: auto;
-    height:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 100px;
+    margin-top: 40px;
+    padding-top: 5px;
     padding-bottom: 5px;
   }
   .prototype-parent {
@@ -171,7 +161,6 @@ Secondary Color (Light Olive Green): #d7f0cc;
     width: 8%;
     height: 8%;
   }
-
 
   /* Layout Styling Below */
 
@@ -249,7 +238,6 @@ Secondary Color (Light Olive Green): #d7f0cc;
   }
   .tools-i-use {
     list-style-type: none;
-    text-align: center;
     padding-left: 0;
   }
   #resume-button {
@@ -288,9 +276,7 @@ Secondary Color (Light Olive Green): #d7f0cc;
     max-width:100%;
     height: auto;
   }
-  #animation-test {
-    width: 100%;
-  }
+
   @keyframes color-change {
     0% {fill: #edc655;}
     50% {fill: #fcffad;}
@@ -328,6 +314,13 @@ Secondary Color (Light Olive Green): #d7f0cc;
   padding-right: 10px;
 }
 
+.col-sm-6 {
+  width: 50%;
+}
+.col-sm-12 {
+  width: 100%;
+}
+
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -351,6 +344,9 @@ nav {
   width: 50%;
 }
   #about-page h3 { margin-top: 0;
+  }
+  .animation-test {
+    margin-top: 65px;
   }
 }
 
@@ -377,6 +373,12 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.animation-test {
+  margin-top: 150px;
+}
+.wordier-cover-img {
+  margin-top: 15px;
 }
 
 }
