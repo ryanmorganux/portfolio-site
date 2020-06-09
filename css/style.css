@@ -219,11 +219,17 @@ Secondary Color (Light Olive Green): #d7f0cc;
   nav > ul > li > a:active {
     color: #ffffff;
   }
+  .velacompetitivelist {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px;
+  }
   #my-work {
     text-align: center;
   }
   #footer {
     text-align: center;
+    background-color: #f2f2f2;
   }
   #about {
     text-align: center;
@@ -257,6 +263,14 @@ Secondary Color (Light Olive Green): #d7f0cc;
   #vela-title {
     text-align: center;
   }
+  .velaheadimage img {
+    height:400px;
+    width:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
   #prototype-title {
     text-align: center;
   }
@@ -267,6 +281,11 @@ Secondary Color (Light Olive Green): #d7f0cc;
     width: 100%;
     padding: 0 10px 5px 10px;
   }
+
+  .wordiercover {
+    text-align: center;
+  }
+
   .container-resume-button {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -276,7 +295,17 @@ Secondary Color (Light Olive Green): #d7f0cc;
     max-width:100%;
     height: auto;
   }
-
+ol li {
+  padding-top: 10px;
+}
+.wordierdisclosure {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+#prottbutton {
+  margin-bottom:30px;
+}
   @keyframes color-change {
     0% {fill: #edc655;}
     50% {fill: #fcffad;}
@@ -348,6 +377,14 @@ nav {
   .animation-test {
     margin-top: 65px;
   }
+  .vela-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .wordier-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 
@@ -379,6 +416,14 @@ Large devices (1024px or larger)
 }
 .wordier-cover-img {
   margin-top: 15px;
+}
+.vela-main {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.wordier-main {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 }
