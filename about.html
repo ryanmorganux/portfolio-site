@@ -8,22 +8,25 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/25690f5f3a.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="about-page">
   <header>
     <div id="header" class="container">
+      <div class="navtoggle" id="myNavtoggle">
 
-
-      <picture>
-        <source srcset="img/logo7.png" media="(max-width:767px)">
-        <img src="img/logo7.png" alt="Ryan Morgan Logo" class="logo"> </picture>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <picture>
+          <source srcset="img/logo7.png" media="(max-width:767px)">
+          <img src="img/logo7.png" alt="Ryan Morgan Logo" class="logo"> </picture>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#footerlink">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+      </div>
       </nav>
     </div>
   </header>
@@ -99,14 +102,15 @@
     </div>
 
   </main>
+  <a id=footerlink></a>
   <footer>
     <div id="footer" class="container">
       <div>
         <h2> Get in Touch </h2>
-        <p> Do you like my work and want to disucss opportunities? Please get in touch. Call : <a href="tel:+491234567">+49 1234567</a> Prefer sending an email?
+        <p> Do you like my work and want to disucss opportunities? CLick the button below.
         </p>
         <div>
-          <a href="office@careerfoundry.com" class="button contact">Email me</a>
+          <a href="mailto:ry.morgan.2@gmail.com" class="button contact">Email me</a>
         </div>
         <div>
           <a href="https://www.linkedin.com/in/ryanux/" target="_blank">
