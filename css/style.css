@@ -8,365 +8,430 @@ Secondary Color (Light Olive Green): #d7f0cc;
 * {
   box-sizing: border-box;
 }
-  body {
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
-  }
-  header {
-    background-color: #d7f0cc;
-    padding-top: 15px;
-    padding-bottom: 8px;
-    position: fixed;
-    box-shadow: 0px 2px 15px 0px rgba(40, 40, 40, 0.6);
-    width: 100%;
-  }
-  main {
-    padding-top: 110px;
-  }
-  h1, h2, h3, h4 {
-    line-height: 1.4;
 
-  }
-  h1 {
-    font-size: 2.00em;
-    font-weight: 700;
-  }
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
 
-  h2 {
-    font-size: 1.75em;
-    font-weight: 700;
-  }
+header {
+  background-color: #d7f0cc;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  position: fixed;
+  box-shadow: 1px 2px 15px 1px rgba(40, 40, 40, 0.6);
+  width: 100%;
+}
 
-  h3 {
-    font-size: 1.25em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.00em;
-    font-weight: 400;
-  }
-  img {
-    width:100%;
-  }
+main {
+  padding-top: 110px;
+}
 
-  a:link {
+h1 h2 h3 h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a:link {
   color: #ff7f50;
   text-decoration: none; /* No underlining */
   transition-duration: 0.2s;
   transition-property: opacity;
-  }
-  a:visited { /* visited link */
-  color: #346beb;
-  }
-  a:hover {
-    color: #439140;
-    opacity: 0.8;
-    font-weight: bold;
-  }
-  a:active { /* selected link */
-  color: #994c30;
-  }
+}
 
-  .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ff7f50;
-    color: #ffffff !important; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
-  .button:hover {
+a:visited { /* visited link */
+  color: #346beb;
+}
+
+a:hover {
+  color: #439140;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+a:active { /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #545454 !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  }
-  .button:active {
-    opacity:0.4; /*Reduces the opactiy of the button to 40% when active. Makes action visible for mobile users where hover is not visible */
-    text-decoration: none;
-  }
-  .button.contact {
-    background-color: transparent;
-    color: #ff7f50 !important;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
-    margin-bottom: 20px;
-    transition: 0.2s;
-  }
-  .button.contact:hover {
+}
+
+.button:active {
+  opacity: 0.4; /* Reduces the opactiy of the button to 40% when active. Makes action visible for mobile users where hover is not visible */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #fff;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.button.contact:hover {
   background-color: #ff7f50;
-  color: #ffffff !important;
-  }
-  .button.contact:active {
-    background-color: #ff7f50;
-    color: #ffffff !important;
-    border: 5px solid #439140;
-  }
-  .profile-pic {
-    max-width:30%;
-    height:auto;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .logo { /* changes the size of the logo*/
-    max-width:85px;
-    height:auto;
-  }
-  .vela-index-img img {
-    height:400px;
-    width:auto;
-  }
-  .wordier-cover-img {
-    max-width: 80%;
-    margin-top: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .prototype-parent {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .button-prototype {
-    background-color: transparent;
-    color: #ff7f50 !important;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
-    margin-bottom: 20px;
-    font-weight:400;
-    padding: 10px;
-    border-radius: 3px;
-  }
-  .button-prototype:hover {
+  color: #fff !important;
+}
+
+.button.contact:active {
   background-color: #ff7f50;
-  color: #ffffff !important;
-  }
-  .button-prototype:active {
-    background-color: #ff7f50;
-    color: #ffffff !important;
-  }
+  color: #fff !important;
+  border: 5px solid #439140;
+}
 
-  .linkedin {
-    width:8%;
-    height:8%;
-  }
-  .twitter {
-    width: 8%;
-    height: 8%;
-  }
+.profile-pic {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-  /* Layout Styling Below */
+.logo {/* changes the size of the logo */
+  max-width: 85px;
+  height: auto;
+}
 
-  .container {
-    padding: 0 15px;
-  }
-  .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  #my-work .row {
-    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
-  }
-  #hero {
-    background-color: #f2f2f2;
-    display: inline-block;
-    width: 100%;
-    text-align: center; /* I am not sure why the text doesnt appear to be accurately centered on the screen. */
-    padding-bottom: 50px;
-    padding-top: 15px;
-  }
-  #hero h1 {
-      padding: 0 25px;
-      width: 100%;
-  }
+.vela-index-img img {
+  height: 400px;
+  width: auto;
+}
+
+.wordier-cover-img {
+  max-width: 80%;
+  margin-top: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.prototype-parent {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button-prototype {
+  background-color: transparent;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+  margin-bottom: 20px;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.button-prototype:hover {
+  background-color: #ff7f50;
+  color: #fff !important;
+}
+
+.button-prototype:active {
+  background-color: #ff7f50;
+  color: #fff !important;
+}
+
+.linkedin {
+  width: 8%;
+  height: 8%;
+}
+
+.twitter {
+  width: 8%;
+  height: 8%;
+}
+
+/* Layout Styling Below */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#my-work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero {
+  background-color: #f2f2f2;
+  display: inline-block;
+  width: 100%;
+  text-align: center; /* I am not sure why the text doesnt appear to be accurately centered on the screen. */
+  padding-bottom: 50px;
+  padding-top: 15px;
+}
+
+#hero h1 {
+  padding: 0 25px;
+  width: 100%;
+}
+
 #hero span {
-  display:block;
+  display: block;
   font-size: 16pt;
-  font-style: bold;
+  font-weight: bold;
   padding: 0 25px;
 }
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  nav > ul > li > a {
-    padding: 0 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #5e5e5e; /* ISSUE - FOR SOME REASON, THE BLUE COLOR FROM THE VISITED LINK CLASS IS OVERRIDING THIS */
-  }
-  nav > ul > li > a:visited {
-    color: #8c8c8c;
-  }
-  nav > ul > li > a:hover {
-    color: #ff7f50;
-    text-decoration: none;
-  }
-  nav > ul > li > a:active {
-    color: #ffffff;
-  }
-  .velacompetitivelist {
-    text-align: center;
-    list-style-type: none;
-    padding-left: 0px;
-  }
-  #my-work {
-    text-align: center;
-  }
-  #footer {
-    text-align: center;
-    background-color: #f2f2f2;
-  }
-  #about {
-    text-align: center;
-  }
-  #skills-tools-list > h2 > div > div > h3 > ul {
-    list-style-type: none;
-    padding: 0px;
-  }
-  .relevant-skills {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  .tools-i-use {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  #resume-button {
-    background-color: transparent;
-    color: #ff7f50 !important;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
-  }
-  #resume-button:hover {
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5e5e5e; /* ISSUE - FOR SOME REASON, THE BLUE COLOR FROM THE VISITED LINK CLASS IS OVERRIDING THIS */
+}
+
+nav > ul > li > a:visited {
+  color: #8c8c8c;
+}
+
+nav > ul > li > a:hover {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #fff;
+}
+
+.velacompetitivelist {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#my-work {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+#about {
+  text-align: center;
+}
+
+#skills-tools-list > h2 > div > div > h3 > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.relevant-skills {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tools-i-use {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#resume-button {
+  background-color: #fff;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+#resume-button:hover {
   background-color: #ff7f50;
-  color: #ffffff !important;
-  }
-  #resume-button:active {
-    background-color: #ff7f50;
-    color: #ffffff !important;
-  }
-  #vela-title {
-    text-align: center;
-  }
-  .velaheadimage img {
-    height:400px;
-    width:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-  }
-  #prototype-title {
-    text-align: center;
-  }
-  .vela-main {
-    padding-top: 235px;
-  }
-  #my-story {
-    width: 100%;
-    padding: 0 10px 5px 10px;
-  }
+  color: #fff !important;
+}
 
-  .wordiercover {
-    text-align: center;
-  }
+#resume-button:active {
+  background-color: #ff7f50;
+  color: #fff !important;
+}
 
-  .container-resume-button {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .berlin-illustration {
-    width:100%;
-    max-width:100%;
-    height: auto;
-  }
+#vela-title {
+  text-align: center;
+}
+
+.velaheadimage img {
+  height: 400px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+#prototype-title {
+  text-align: center;
+}
+
+.vela-main {
+  padding-top: 235px;
+}
+
+#my-story {
+  width: 100%;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.wordiercover {
+  text-align: center;
+}
+
+.container-resume-button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 ol li {
   padding-top: 10px;
 }
+
 .wordierdisclosure {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
 }
+
 #prottbutton {
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
+
 .introtitle {
   font-size: 40px;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
-.navtoggle, .navtoggle.responsive {
+
+.navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 30px;
-  padding-right: 0;
-  padding-top: 12px;
+  padding-right: 24px;
+  padding-top: 28px;
 }
+
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 6px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5)
 }
-.navtoggle.responsive lu:last-child {
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-
-
-  @keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
-  }
-  @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+@keyframes color-change {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 [class*="col-"] {
-  float:left;
+  float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -374,106 +439,124 @@ ol li {
 .col-sm-6 {
   width: 50%;
 }
+
 .col-sm-12 {
   width: 100%;
 }
 
-  /* ==============================
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 10px 0 10px;
-}
-nav > ul > li {
-  display: inline-block;
-}
-main {
-  padding-top: 135px;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 30px;
- }
- body {
-   font-size:18px;
- }
- .logo { /* changes the size of the logo*/
-   max-width:125px;
-   height:auto;
- }
- .col-md-6 {
-  width: 50%;
-}
-  #about-page h3 { margin-top: 0;
+    text-align: unset;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  main {
+    padding-top: 135px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 30px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .logo { /* changes the size of the logo */
+    max-width: 125px;
+    height: auto;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
   .animation-test {
     margin-top: 65px;
   }
+
   .vela-main {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .wordier-main {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-nav > ul {
-  margin: 1em 0;
-}
+    display: inline-block;
+  }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 }
-
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-3 {
+    width: 25%;
+  }
 
-.col-lg-3 {
-  width:25%;
-}
-.col-lg-5 {
-  width: 41.66%;
-}
-.col-lg-7 {
-  width: 58.33%;
-}
-.col-lg-6 {
-  width: 50%;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.animation-test {
-  margin-top: 150px;
-}
-.wordier-cover-img {
-  margin-top: 15px;
-}
-.vela-main {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.wordier-main {
-  padding-left: 100px;
-  padding-right: 100px;
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .animation-test {
+    margin-top: 150px;
+  }
+
+  .wordier-cover-img {
+    margin-top: 15px;
+  }
+
+  .vela-main {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .wordier-main {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
