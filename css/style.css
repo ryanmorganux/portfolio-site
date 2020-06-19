@@ -211,7 +211,7 @@ a:active { /* selected link */
   width: 100%;
   text-align: center; /* I am not sure why the text doesnt appear to be accurately centered on the screen. */
   padding-bottom: 50px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 #hero h1 {
@@ -450,7 +450,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
   }
 
