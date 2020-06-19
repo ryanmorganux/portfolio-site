@@ -450,7 +450,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
   }
 
